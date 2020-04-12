@@ -10,6 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('admin/login.html','UserController@getlogin')->name('login');
+Route::post('admin/login.html','UserController@postlogin');
+Route::get('admin/logout.html','UserController@getlogout');
+
+
+
 
 Route::get('/', function () {
     return view('welcome');
